@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <div class="hr"><img src="img/tumblr_mdfzowJKhR1rrdod6o1_500.jpg" class="profile" alt="">
+    <h1 style="font-family: 'Times New Roman', Times, serif;">Keomangkone phetvixay</h1>
+    <p>Beginner Web Developer</p>
+    <a href="" class="button">View my project</a>
+    </div>
+    <section>
+         <h2><span>My Skills</span></h2>
+
+ 
+  <section>
+    <div class="cards">
+
+      <div class="card" style="--color: #e44d26;">
+        <span class="icon">🌐</span>
+        <div class="lang">HTML</div>
+        <div class="level">Intermediate</div>
+        <div class="bar-bg">
+          <div class="bar-fill" data-width="75"></div>
+        </div>
+        <div class="percent">75%</div>
+      </div>
+
+      
+      <div class="card" style="--color: #264de4;">
+        <span class="icon">🎨</span>
+        <div class="lang">CSS</div>
+        <div class="level">Beginner</div>
+        <div class="bar-bg">
+          <div class="bar-fill" data-width="50"></div>
+        </div>
+        <div class="percent">50%</div>
+      </div>
+
+      
+      <div class="card" style="--color: #f7df1e;">
+        <span class="icon">⚡</span>
+        <div class="lang">JavaScript</div>
+        <div class="level">Beginner</div>
+        <div class="bar-bg">
+          <div class="bar-fill" data-width="30"></div>
+        </div>
+        <div class="percent">30%</div>
+      </div>
+
+      
+      <div class="card" style="--color: #5c9bd6;">
+        <span class="icon">🔵</span>
+        <div class="lang">C</div>
+        <div class="level">Beginner</div>
+        <div class="bar-bg">
+          <div class="bar-fill" data-width="40"></div>
+        </div>
+        <div class="percent">40%</div>
+      </div>
+
+      
+      <div class="card" style="--color: #9c5af7;">
+        <span class="icon">⚙️</span>
+        <div class="lang">C++</div>
+        <div class="level">Beginner</div>
+        <div class="bar-bg">
+          <div class="bar-fill" data-width="35"></div>
+        </div>
+        <div class="percent">35%</div>
+      </div>
+
+    </div>
+    <script>
+    
+    window.addEventListener('load', () => {
+      document.querySelectorAll('.bar-fill').forEach(bar => {
+        const w = bar.getAttribute('data-width');
+        setTimeout(() => { bar.style.width = w + '%'; }, 300);
+      });
+    });
+  </script>
+  </section>
+
+    <section class="projects">
+        <h2>My project</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="img/login-8582362_640.png" alt="Login page">
+                <h3>Login page</h3>
+                <a href="login.html" class="button">View project</a>
+            </div>
+            <div class="project-card">
+                <img src="img/images.jpeg" alt="Login page">
+                <h3>Login page</h3>
+                <a href="b.html" class="button">View project</a>
+            </div>
+            <div class="project-card">
+                <img src="img/istockphoto-1063354444-612x612.jpg" alt="Signup page">
+                <h3>Signup page</h3>
+                <a href="signup.html" class="button">View project</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contact me</h2>
+        <form>
+            <label for="Name">Name</label>
+            <input type="text" placeholder="Enter your name">
+            <label for="email">email</label>
+            <input type="email" placeholder="Enter your email">
+            <label for="message">message</label>
+            <textarea placeholder="Write your message"></textarea>
+            <button type="submit">Send message</button>
+        </form>
+    </section>
+</body>
+</html>

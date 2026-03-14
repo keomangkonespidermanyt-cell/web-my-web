@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>put</title>
+    <link rel="stylesheet" href="face.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-card">
+            <img src="img/tumblr_mdfzowJKhR1rrdod6o1_500.jpg" alt="Profile" class="profile-img">
+            <h1>Lucky</h1>
+            <p>oh noh</p>
+            <a href="#" class="button">Hello</a>
+        </div>
+       
+    </div>
+     <div class="box">
+
+<h2>Enter Project</h2>
+
+<input type="text" id="name" placeholder="Your name">
+
+<input type="password" id="code" placeholder="Enter code">
+
+<br><br>
+
+<button onclick="checkLogin()">Enter</button>
+
+</div>
+
+<script>
+
+function checkLogin(){
+
+let code = document.getElementById("code").value;
+
+if(code === "4321"){
+
+window.location.href="home.html";
+
+}else{
+
+alert("Wrong code");
+
+}
+
+}
+</script>
+       
+
+    <!-- <script src="face.js"></script> -->
+</body>
+</html>
